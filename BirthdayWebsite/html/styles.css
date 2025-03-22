@@ -1,0 +1,109 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff5ee;
+  text-align: center;
+  margin-top: 100px;
+}
+
+h1, h2 {
+  color: #ff69b4;
+}
+
+button {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff1493;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.fade-in {
+  animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.rizz-line {
+  font-size: 20px;
+  color: #ff69b4;
+  margin-top: 20px;
+}
+
+.next-btn {
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 16px;
+  margin: 20px;
+  cursor: pointer;
+  border-radius: 8px;
+  display: none;
+}
+
+.cake {
+  width: 150px;
+  height: 200px;
+  background-color: #ffb6c1;
+  border-radius: 10px;
+  position: relative;
+  margin: 20px auto;
+}
+
+.candle {
+  width: 20px;
+  height: 50px;
+  background-color: #ffd700;
+  position: absolute;
+  top: -60px;
+  left: calc(50% - 10px);
+}
+
+.candle:before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #ff4500;
+  border-radius: 50%;
+  position: absolute;
+  top: -12px;
+  left: 5px;
+  animation: flicker 1s infinite;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+h2 {
+  margin-top: 20px;
+}
+
+.balloons {
+  display: none;
+}
